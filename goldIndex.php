@@ -12,17 +12,19 @@
         
         <?php 
         # Function to give the length
-        function Length($str){
+        function lengthValue($str)
+        {
             return strlen($str);
         }
-        $helloMessage = "Hello World";
-        echo " the length of \" ".$helloMessage." \" is : ".Length($helloMessage);
+        $message = "Hello World";
+        echo " the length of \" ".$message." \" is : ".lengthValue($message);
         ?>
 
         <h2>Exercise 2 : Count The Words In The String</h2>
         <?php 
         # Function to count variable word
-        function countWord($word){
+        function countWord($word)
+        {
             print_r(str_word_count($word,1));
         }
         echo countWord($helloMessage);
@@ -31,7 +33,8 @@
         <h2>Exercise 3 : Convert To Uppercase</h2>
         <?php 
         # Function to convert in Uppercase
-        function variableUppercase($word){
+        function variableUppercase($word)
+        {
             return strtoupper($word);
         }
         echo variableUppercase($helloMessage);
